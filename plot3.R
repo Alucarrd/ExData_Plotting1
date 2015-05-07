@@ -2,7 +2,7 @@
 setwd("/home/pete/DataScience/ExploratoryAnalysis/CourseProject1/ExData_Plotting1")
 
 #load data into dataframe
-myData <- read.table(file="data/household_power_consumption.txt", header=TRUE, sep=";", stringsAsFactors = FALSE)
+myData <- read.table(file="../data/household_power_consumption.txt", header=TRUE, sep=";", stringsAsFactors = FALSE)
 
 #subset data to grab date from 2/1/2007 and 2/2/2007
 myPlotData <- myData[myData$Date == '1/2/2007' | myData$Date == '2/2/2007',]
